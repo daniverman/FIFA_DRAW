@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.verman.fifa.MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/main">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FIFA Draw"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:fontFamily="serif"
+        android:gravity="center"
+        style=""/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|bottom"
+        android:layout_weight="1"
+        android:paddingBottom="80dp"
+
+        >
+
+        <Button
+            android:id="@+id/oneByOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="oneByOneClick"
+            android:padding="20dp"
+            android:textColor="#ffff"
+            style="Widget.AppCompat.Button.Colored"
+            android:text="One By One" />
+
+        <Button
+            android:id="@+id/PairByPair"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="PairByPairClick"
+            android:text="Pair By Pair"
+            android:padding="20dp"
+            style="Widget.AppCompat.Button.Colored"
+            android:textColor="#ffff"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>

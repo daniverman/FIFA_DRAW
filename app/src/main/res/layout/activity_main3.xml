@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.verman.fifa.Main3Activity">
+
+    <TextView
+        android:id="@+id/how_much_left_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="@string/app_name" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="15dp"
+        />
+    <TextView
+        android:id="@+id/win_lbl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+
+    <ImageView
+        android:id="@+id/gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:background="#f7b307">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="GoBack"
+            android:text="Back"
+            android:textColor="#ffff"/>
+
+        <Button
+            android:id="@+id/draw_next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Draw"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="Draw"
+            android:textColor="#ffff"/>
+
+        <Button
+            android:id="@+id/draw_all_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="DrawAll"
+            android:text="Draw All"
+            android:textColor="#ffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>
